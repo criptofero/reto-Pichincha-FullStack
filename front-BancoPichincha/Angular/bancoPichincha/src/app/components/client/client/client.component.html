@@ -1,0 +1,49 @@
+<div class="container-tables">
+  <div class="title-container">
+    <h2>Clientes</h2>
+  </div>
+  <div class="search-row-container">
+    <div class="input-cont">
+      <input class="input" placeholder="Buscar">
+    </div>
+    <div class="botton-container">
+      <button class="new-btn" (click)="openModaladdClient()"> Nuevo </button>
+    </div>
+  </div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Número de documento</th>
+          <th>Tipo de documento</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Género</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí puedes agregar filas de datos de ejemplo -->
+        <tr *ngFor="let cli of clients">
+          <td>{{cli.id}}</td>
+          <td>{{cli.numberDocument}}</td>
+          <td>{{cli.typedocument}}</td>
+          <td>{{cli.name}}</td>
+          <td>{{cli.lastName}}</td>
+          <td>{{cli.gender}}</td>
+          <td>{{cli.address}}</td>
+          <td>{{cli.numberPhone}}</td>
+        </tr>
+        <!-- Agrega más filas según tus datos -->
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="isOpen">
+    <app-add-client (closed)="closeModaladdClient($event)"></app-add-client>
+  </div>
+
+</div>
+
+

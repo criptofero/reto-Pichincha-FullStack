@@ -1,0 +1,28 @@
+.container-tables{
+  margin-left: 30px;
+}
+.input{
+  height: 80%;
+}
+.search-row-container{
+  display: flex;
+}
+.botton-container{
+  margin-left: 50%;
+}
+.botton-container .new-btn{
+  background-color: rgb(226, 226, 8);
+  border-radius: 5px;
+  border: 1px solid rgb(211, 208, 208);
+  width: 195%;
+  height: 120%;
+}
+.table-container{
+  margin-top: 30px;
+}
+
+
+th, td {
+  border-bottom: 1px solid #999;
+  width: 25%;
+}

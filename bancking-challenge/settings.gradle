@@ -1,0 +1,6 @@
+rootProject.name = 'reto-pichincha'
+include ':model'
+include ':usecase'
+include 'app-service'
+project(':model').projectDir = file('./domain/model')
+project(':usecase').projectDir = file('./domain/usecase')

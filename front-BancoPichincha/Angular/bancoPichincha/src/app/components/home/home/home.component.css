@@ -1,0 +1,9 @@
+.container-home{
+  display: flex;
+  margin: 100%;
+}
+.container-home .image{
+  width: 200px;
+  height: auto;
+
+}

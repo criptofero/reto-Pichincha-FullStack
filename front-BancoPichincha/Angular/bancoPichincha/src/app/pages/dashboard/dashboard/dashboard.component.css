@@ -1,0 +1,20 @@
+.container-main{
+  margin: 80px;
+}
+.container-header{
+  margin-bottom: 20px;
+}
+.container{
+  display: flex;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+
+}
+
+.tables{
+  border-top: 1px solid gray;
+}
